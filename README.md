@@ -8,7 +8,7 @@
 
 - Switch between driving a car and walking as a character
 - Animated car and player sprites
-- Procedural city buildings and scrolling streets
+- Procedural world and scrolling streets
 - Car lights, wheel rotation, and character blinking animations
 - Keyboard controls for movement and interaction
 
@@ -41,7 +41,7 @@ python game.py
 
 I wanted to create a small game that combines animation systems, procedural generation, and interactive gameplay. The project allowed me to apply concepts learned in CS50 such as object-oriented programming, event handling, sprite animation, and modular code design.
 
-The project also served as a way to explore how different game systems—such as environment generation, character animation, and player interaction—can work together in a cohesive structure.
+The project also served as a way to explore how different game systems, such as environment generation, character animation, and player interaction, can work together in a cohesive structure.
 
 ## Design Decisions
 
