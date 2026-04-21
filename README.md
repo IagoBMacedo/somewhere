@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# somewhere
-A procedurally generated 2D driving game built with Python and Pygame.
-=======
 \# Somewhere: A Procedurally Generated Driving Game
 
 \#### Video Demo: https://www.youtube.com/watch?v=KhSC6wMVU0M
@@ -158,4 +154,3 @@ To keep the code clean, I created a separate file just for blinking logic, while
 
 Also, I learned that as the code grows, it becomes extremely important to keep things organized. I started writing the entire project in a single file, `game.py`, but as features were added, it quickly became messy and hard to manage. Refactoring the code into separate classes and files for each type of object made the project much cleaner and easier to maintain. This was one of the most important lessons I learned while building this game.
 
->>>>>>> df578ab (Create full application)
