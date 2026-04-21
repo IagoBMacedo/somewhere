@@ -1,34 +1,38 @@
-\# Somewhere: A Procedurally Generated Driving Game
-
-\#### Video Demo: https://www.youtube.com/watch?v=KhSC6wMVU0M
+# Somewhere: A Procedurally Generated Driving Game
 
 
 
-\#### Description: A 2D driving game where the player can control a car or a walking character through a procedurally generated city. The game features dynamic street scrolling, procedural building generation, and animated characters.
+#### Description: A 2D driving game where the player can control a car or a walking character through a procedurally generated city. The game features dynamic street scrolling, procedural building generation, and animated characters.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/2f206442-e054-4757-8b3e-49ac2c23b85a" alt="Somewhere Game Preview" width="100%">
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/1634ba30-15ff-402d-a176-0c93ad969f0d" alt="Somewhere Gameplay Preview" width="100%">
+</p>
+
+## Features
+
+- Switch between driving a car and walking as a character
+
+- Animated car and player sprites
+
+- Procedural city buildings and scrolling streets
+
+- Car lights, wheel rotation, and character blinking animations
+
+- Keyboard controls for movement and interaction
 
 
 
-\## Features
-
-\- Switch between driving a car and walking as a character
-
-\- Animated car and player sprites
-
-\- Procedural city buildings and scrolling streets
-
-\- Car lights, wheel rotation, and character blinking animations
-
-\- Keyboard controls for movement and interaction
+## How to Run
 
 
 
-\## How to Run
+1. Install Python 3
 
-
-
-1\. Install Python 3
-
-2\. Install Pygame:
+2. Install Pygame:
 
 
 
@@ -40,7 +44,7 @@ pip install pygame
 
 
 
-3\. Run:
+3. Run:
 
 
 
@@ -52,27 +56,27 @@ python game.py
 
 
 
-\## Controls
+## Controls
 
 
 
-\- \*\*Move Forward / Accelerate:\*\* W
+- **Move Forward / Accelerate:** W
 
-\- \*\*Move Backward / Brake:\*\* S
+- **Move Backward / Brake:** S
 
-\- \*\*Move Left:\*\* A
+- **Move Left:** A
 
-\- \*\*Move Right:\*\* D
+- **Move Right:** D
 
-\- \*\*Enter / Exit Car:\*\* E
+- **Enter / Exit Car:** E
 
-\- \*\*Toggle Car Lights:\*\* Q
+- **Toggle Car Lights:** Q
 
-\- \*\*Interact with Car:\*\* F
+- **Interact with Car:** F
 
 
 
-\## Motivation
+## Motivation
 
 I wanted to create a small game that combines animation systems, procedural generation, and interactive gameplay. The project allowed me to apply concepts learned in CS50 such as object-oriented programming, event handling, sprite animation, and modular code design.
 
@@ -82,11 +86,11 @@ The project also served as a way to explore how different game systems—such as
 
 
 
-\## Design Decisions
+## Design Decisions
 
 
 
-\### Object-Oriented Structure
+### Object-Oriented Structure
 
 
 
@@ -94,7 +98,7 @@ As the project grew, it became clear that organizing the code into classes was e
 
 
 
-\### Procedural Environment
+### Procedural Environment
 
 
 
@@ -102,7 +106,7 @@ Instead of manually placing buildings, the city environment is generated procedu
 
 
 
-\### Animation Systems
+### Animation Systems
 
 
 
@@ -110,11 +114,11 @@ Several small animation systems were implemented to improve visual feedback:
 
 
 
-\- Rotating car wheels
+- Rotating car wheels
 
-\- Blinking characters
+- Blinking characters
 
-\- Car lights
+- Car lights
 
 
 
@@ -122,7 +126,7 @@ Each animation runs independently from the main movement logic to keep the code 
 
 
 
-\### Frame-Independent Movement
+### Frame-Independent Movement
 
 
 
@@ -132,7 +136,7 @@ Movement calculations use delta time (`dt`) so that object speeds remain consist
 
 
 
-\## Challenges
+## Challenges
 
 
 
@@ -148,7 +152,7 @@ Implementing blinking was also way harder than I expected. Because the character
 
 
 
-To keep the code clean, I created a separate file just for blinking logic, while keeping the offsets inside the car and character classes. The `update\\\\\\\_blink` function runs once per frame and controls global blink timing, while `get\\\\\\\_eye\\\\\\\_draw\\\\\\\_rect` is executed dynamically depending on whether the player is in the car or on foot. This way, the blink pixel and offset are always positioned correctly.
+To keep the code clean, I created a separate file just for blinking logic, while keeping the offsets inside the car and character classes. The `update_blink` function runs once per frame and controls global blink timing, while `get_eye_draw_rect` is executed dynamically depending on whether the player is in the car or on foot. This way, the blink pixel and offset are always positioned correctly.
 
 
 
